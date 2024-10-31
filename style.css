@@ -1,0 +1,68 @@
+@import url('./css/reset.css');
+@import url('./css/menu-style.css');
+
+.menu-section {
+  padding: 2em;
+}
+
+.menu ul {
+  list-style: none;
+  background-color: #dcdde1;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #353b48;
+  padding: 0.6em 1em;
+  display: block;
+  transition: all 0.6s ease;
+}
+
+.menu li a:hover {
+  background-color: #f5f6fa;
+}
+
+.menu-heading {
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  color: #dcdde1;
+}
+
+@media screen and (min-width: 600px) {
+  .single-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+  }
+
+  .single-nav ul li {
+    flex-grow: 1;
+  }
+}
+
+/* Advanced Menu */
+
+.advanced-nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .advanced-nav ul {
+    display: flex;
+  }
+
+  .advanced-nav ul li {
+    flex-grow: 1;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .icon i {
+    font-size: 30px;
+  }
+}
